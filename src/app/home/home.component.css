@@ -1,0 +1,266 @@
+.home-master{
+    width: 100vmax;
+    height: 100vmax;
+    background: url('../../assets/images/pexels-photo-952670.jpeg') repeat-y center fixed;
+    background-size: 100% 100%;
+    background-position: top center;
+}
+img{
+    background: none !important;
+position: absolute;
+align-items: center;
+}
+
+#branding{
+position: relative;
+}
+.company{
+position: absolute;
+margin-bottom: 120px;
+margin-top: 80px;
+top: 30%;
+left: 25%;
+}
+.hack{
+    position: absolute;
+    margin-top: 220px;
+    left: 34%;
+    top: 80%;
+ 
+}
+#hack{
+width: 270px;
+height:100px;
+}
+#home-tab{
+position: absolute;
+top: 450px;
+left: 150px;
+}
+
+/*
+registeration button
+*/
+.register {
+	border: 2px solid #2e2e2e;
+	cursor: pointer;
+	letter-spacing: 0.2125rem;
+	overflow: hidden;
+	padding: 20px 30px;
+	position: absolute;
+	text-align: center;
+	text-transform: uppercase;
+	transition: 
+		background 5s cubic-bezier(0.19, 1, 0.22, 1),
+		border 1s cubic-bezier(0.19, 1, 0.22, 1),
+		color 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+    user-select: none;
+    width: 300px;
+    top: 350px;
+    left: 380px;
+    background-color: greenyellow;
+
+}
+
+.register a {
+	color: #969696;
+	font-family: "Varela Round";
+	text-decoration: none;
+}
+
+.register .mask {
+	background-color: #fff;
+	background-color: rgba(255, 255, 255, 0.5);
+	height: 100px;
+	position: absolute;
+	transform: translate3d(-120%, -50px, 0) rotate3d(0, 0, 1, 45deg);
+	transition: all 1.1s cubic-bezier(0.19, 1, 0.22, 1);
+	width: 200px;
+}
+
+.register .shift {
+	display: inline-block;
+	transition: all 1.1s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.register:hover {
+	background-color: rgba(255, 255, 255, 0.05);
+	border-color: #fff;
+	box-shadow: 0 0 5px rgba(255, 245, 245, 0.8);
+	transition: background 0s;
+}
+
+.register:hover a {
+	color: #fff;
+}
+
+.register:hover .mask {
+	background-color: #fff;
+	transform: translate3d(120%, -100px, 0) rotate3d(0, 0, 1, 90deg);
+}
+
+.register:hover .shift {
+	transform: translateX(5px);
+}
+
+.register:active {
+	background-color: #fff;
+}
+
+.register:active a {
+	color: #202020;
+}
+
+body.show {
+	background-color: #282828;
+}
+
+/* .register:hover {
+	background-image: url('http://cuinine.com/img/codepen/savvy.jpg');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+} */
+
+
+
+
+/*
+*/
+
+/*
+about-concept
+*/
+#about-concept{
+    background:url('../../assets/images/grid.jpg') no-repeat;
+    background-position-y: -90px;
+    background-color: #fff;
+    font-size: 20px;
+    color: black;
+}
+#about-concept h4{
+font-weight: bolder;
+font-size: 26px;
+}
+
+/*
+various fields of intrests
+*/
+
+.btn-hover {
+    width: 150px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    margin: 5px;
+    margin-bottom: 20px;
+    height: 55px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+
+    border-radius: 50px;
+   
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:hover {
+    background-position: 100% 0;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:focus {
+    outline: none;
+}
+
+.btn-hover.color-1 {
+    background-image: linear-gradient(to right, #25aae1, #40e495, #30dd8a, #2bb673);
+    box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
+}
+.btn-hover.color-2 {
+    background-image: linear-gradient(to right, #f5ce62, #e43603, #fa7199, #e85a19);
+    box-shadow: 0 4px 15px 0 rgba(229, 66, 10, 0.75);
+}
+.btn-hover.color-3 {
+    background-image: linear-gradient(to right, #667eea, #764ba2, #6B8DD6, #8E37D7);
+    box-shadow: 0 4px 15px 0 rgba(116, 79, 168, 0.75);
+}
+.btn-hover.color-4 {
+    background-image: linear-gradient(to right, #fc6076, #ff9a44, #ef9d43, #e75516);
+    box-shadow: 0 4px 15px 0 rgba(252, 104, 110, 0.75);
+}
+.btn-hover.color-5 {
+    background-image: linear-gradient(to right, #0ba360, #3cba92, #30dd8a, #2bb673);
+    box-shadow: 0 4px 15px 0 rgba(23, 168, 108, 0.75);
+}
+.btn-hover.color-6 {
+    background-image: linear-gradient(to right, #009245, #FCEE21, #00A8C5, #D9E021);
+    box-shadow: 0 4px 15px 0 rgba(83, 176, 57, 0.75);
+}
+.btn-hover.color-7 {
+    background-image: linear-gradient(to right, #6253e1, #852D91, #A3A1FF, #F24645);
+    box-shadow: 0 4px 15px 0 rgba(126, 52, 161, 0.75);
+}
+.btn-hover.color-8 {
+    background-image: linear-gradient(to right, #29323c, #485563, #2b5876, #4e4376);
+    box-shadow: 0 4px 15px 0 rgba(45, 54, 65, 0.75);
+}
+.btn-hover.color-9 {
+    background-image: linear-gradient(to right, #25aae1, #4481eb, #04befe, #3f86ed);
+    box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
+}
+.btn-hover.color-10 {
+        background-image: linear-gradient(to right, #ed6ea0, #ec8c69, #f7186a , #FBB03B);
+    box-shadow: 0 4px 15px 0 rgba(236, 116, 149, 0.75);
+}
+.btn-hover.color-11 {
+       background-image: linear-gradient(to right, #eb3941, #f15e64, #e14e53, #e2373f);  box-shadow: 0 5px 15px rgba(242, 97, 103, .4);
+}
+.btn-hover.color-12 {
+    background-image: linear-gradient(to right, #93a359, #a7292d, #6e4ee1, #000000);  box-shadow: 0 5px 15px rgba(242, 97, 103, .4);
+}
+
+
+/*
+prizes
+
+*/
+
+.box{
+    padding:60px 0px;
+}
+
+.box-part{
+    background:#FFF;
+    border-radius:10px;
+    padding:60px 10px;
+    margin:30px 0px;
+}
+
+.box-part:hover{
+    background:#4183D7;
+}
+
+.box-part:hover .fa , 
+.box-part:hover .title , 
+.box-part:hover .text ,
+.box-part:hover a{
+    color:#FFF;
+    -webkit-transition: all 1s ease-out;
+    -moz-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    transition: all 1s ease-out;
+}
+
+.text{
+    margin:20px 0px;
+}
+
+.fa{
+     color:#4183D7;
+}

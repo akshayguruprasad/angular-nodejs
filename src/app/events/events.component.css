@@ -1,0 +1,248 @@
+
+nav > .nav.nav-tabs{
+
+   border: none;
+     color:#fff;
+     background:#272e38;
+     border-radius:0;
+ 
+ }
+ nav > div a.nav-item.nav-link,
+ nav > div a.nav-item.nav-link.active
+ {
+   border: none;
+     padding: 18px 25px;
+     color:#fff;
+     background:#272e38;
+     border-radius:0;
+ }
+ 
+ nav > div a.nav-item.nav-link.active:after
+  {
+   content: "";
+   position: relative;
+   bottom: -60px;
+   left: -10%;
+   border: 15px solid transparent;
+   border-top-color: #e74c3c ;
+ }
+ .tab-content{
+   background: #fdfdfd;
+     line-height: 25px;
+     border: 1px solid #ddd;
+     border-top:5px solid #e74c3c;
+     border-bottom:5px solid #e74c3c;
+     padding:30px 25px;
+ }
+ 
+ nav > div a.nav-item.nav-link:hover,
+ nav > div a.nav-item.nav-link:focus
+ {
+   border: none;
+     background: #e74c3c;
+     color:#fff;
+     border-radius:0;
+     transition:background 0.20s linear;
+ }
+
+
+
+tr{
+  position: relative;
+}
+
+th{
+
+text-align: right;
+
+}
+ td{
+position: absolute;
+margin-top: 1px;
+margin-left: 6px;
+ }
+
+ .heading{
+  position: relative;
+ }
+
+
+ .heading{
+  text-align: center;
+ }
+ .heading .row{
+margin-left: 30%;
+align-items: center;
+margin-top: 5%;
+ }
+
+
+ .challenge{
+opacity: 1;
+color: black;
+backface-visibility: visible;
+margin-left: 30%;
+margin-top: 5%;
+ }
+
+ .heading h1,h2,h3{
+  margin-bottom: 75px;
+ }
+
+ 
+ .heading h1{
+  padding-top: 200px;
+ }
+
+ .heading{
+background: url('../../assets/images/gree-blue.PNG') 100% 0 no-repeat;
+width: 100%;
+height: 100%;
+background-size: cover;
+}
+
+
+ #logos{
+font-size: 20px;
+
+
+
+ }
+
+ .events-main{
+
+  background: url('../../assets/images/lazer.jpg') 100% 0 no-repeat;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+
+  
+ }
+
+ .challenge{
+  color: greenyellow;
+  font-size: 30px;
+  font-weight: 400
+ }
+
+ .challenge h2{
+margin-left: 20%;
+
+ }
+
+ .accor-back{
+
+
+
+ }
+
+ #accordion{
+
+  width: 100%;
+ }
+
+      
+ .buttons {
+  margin: 10%;
+  text-align: center;
+}
+
+.btn-hover {
+  width: 200px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  margin: 20px;
+  height: 55px;
+  text-align:center;
+  border: none;
+  background-size: 300% 100%;
+
+  border-radius: 50px;
+  moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.btn-hover:hover {
+  background-position: 100% 0;
+  moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.btn-hover:focus {
+  outline: none;
+}
+
+.btn-hover.color-1 {
+  background-image: linear-gradient(to right, #25aae1, #40e495, #30dd8a, #2bb673);
+  box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
+}
+
+#aboutcha h2{
+padding-left: 300px;
+}
+#aboutcha h3{
+  padding-left: 10px;
+margin-top: -65px;
+font-size: 20px;
+}
+#aboutcha ul{
+  padding-top: -50px;
+display: block;
+margin-left: 30px;
+}
+
+#aboutcha li{
+  padding-top: -5px;
+  font-size: 18px;
+
+}
+
+#why{
+  font-size: 20px;
+  margin-left: 400px;
+}
+
+#nav-prize{
+
+width: 1140px;
+
+}
+
+#prize-border{
+background-color: rebeccapurple;
+}
+
+.rules{
+padding-left: 30px;
+
+}
+
+.deliver{
+  padding-left: 30px;
+
+}
+
+.hackathon-common-list prizes-list{
+list-style-type: none;
+
+
+
+}
+.prizewinners li{
+
+  display: inline;
+
+}
+
+.prizewinners{
+  display: inline;
+}
+.second{
+  color: silver;
+}

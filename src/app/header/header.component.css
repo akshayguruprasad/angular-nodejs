@@ -1,0 +1,15 @@
+.header{
+       width: 100%;
+       height: 2vmax; 
+    background-color: #2b0a3d;
+    top: 0;
+    }
+    .bar{
+             width: 100%;
+        background-color: #90c53f;
+        height: .2vmax; 
+    }
+    img{
+width: 10%;
+vertical-align: top;
+    }

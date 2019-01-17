@@ -1,0 +1,353 @@
+<app-header></app-header>
+<div class="events-main">
+  <div class="heading">
+    <h1>{{event.heading}}</h1>
+
+    <h3>TECH CHALLENGE 2019 EDITION IS AN OPPORTUNITY FOR TECH ENTHUSIASTS
+      LIKE YOU TO TRANSFORM THEIR CAREER.
+    </h3>
+    <h2>WHY TAKE THE {{event.title}} CHALLENGE?</h2>
+    <div class="row" style="width: 40%" id="logos">
+      <div class="col-md-4">
+
+        <img src="../../assets/images/dollor-110918.png" alt="money" />
+        <div>Win cash prizes worth upto
+          <b>{{event.prize}}</b>*</div>
+      </div>
+
+      <div class="col-md-4">
+        <img src="../../assets/images/trophy-110918.png" alt="trophy" />
+        <div>Win a job with one of the most renowned
+          IT companies in the world</div>
+      </div>
+      <div class="col-md-4">
+
+        <img src="../../assets/images/msg-110918.png" alt="msg" />
+        <div> Talk to industry leaders and plan your
+          future in the technology space</div>
+      </div>
+    </div>
+  </div>
+  <div class="challenge" style="margin-bottom: 30px;">
+    <h2>{{event.title}} CHALLENGE</h2>
+
+    <div class="row" style="width: 80%;">
+
+      <div class="col-md-4">
+        <div>Hosted By</div>
+        <div>Capgemini</div>
+      </div>
+
+      <div class="col-md-4">
+        <div> Ends On</div>
+        <div>{{event.endson}}</div>
+      </div>
+
+      <div class="col-md-4">
+        <div>Prize Pool</div>
+        <div>{{event.prize}}</div>
+      </div>
+
+    </div>
+
+  </div>
+  <div class="accor-back">
+    <div class="container">
+      <div class="row">
+        <div id="accordion">
+          <div class="card">
+            <div class="card-header" id="headingOne">
+              <h5 class="col-md-12">
+                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                  aria-controls="collapseOne">
+                  Level 1 <span style="margin-left: 150px;margin-right: 550px;text-decoration: none">Screening Phase
+                    MCQs,
+                    Online</span>
+                </button>
+              </h5>
+            </div>
+
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+              <div class="card-body">
+                <table>
+                  <tr>
+                    <th>Attempts Left :</th>
+                    <td>
+                      <p>{{event.levels[0].attempts}}</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>Duration :</th>
+                    <td>
+                      <p>{{event.levels[0].duration}}</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>Passing Score :</th>
+                    <td>
+                      <p>{{event.levels[0].score}}</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>Objective :</th>
+                    <td>
+                      <p>{{event.levels[0].objective}}</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>Ends On :</th>
+                    <td>
+                      <p>{{event.levels[0].ended}}</p>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingTwo">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                  aria-controls="collapseTwo">
+                  Level 2 <span style="margin-left: 150px;margin-right: 450px;text-decoration: none">Hackathon Phase
+                    &nbsp;&nbsp;&nbsp; File Upload, Online</span>
+                </button>
+              </h5>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+              <div class="card-body">
+                <table>
+                  <tr>
+                    <th>Attempts Left :</th>
+                    <td>
+                      <p>{{event.levels[1].attempts}}</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>Duration :</th>
+                    <td>
+                      <p>{{event.levels[1].duration}}</p>
+                    </td>
+
+                  </tr>
+                  <tr>
+                    <th>Passing Score :</th>
+                    <td>
+                      <p>{{event.levels[1].score}}</p>
+                    </td>
+
+                  </tr>
+                  <tr>
+                    <th>Objective :</th>
+                    <td>
+                      <p>{{event.levels[1].objective}}</p>
+                    </td>
+
+                  </tr>
+                  <tr>
+                    <th>Ends On :</th>
+                    <td>
+                      <p>{{event.levels[1].ended}}</p>
+                    </td>
+
+                  </tr>
+
+
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingThree">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree"
+                  aria-expanded="false" aria-controls="collapseThree">
+                  Level 3 <span style="margin-left: 150px;margin-right: 450px;text-decoration: none">Offline Hackathon
+                    Phase &nbsp;&nbsp;&nbsp; File Upload, Pune</span>
+                </button>
+              </h5>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+              <div class="card-body">
+                <table>
+                  <tr>
+                    <th>Attempts Left :</th>
+                    <td>
+                      <p>{{event.levels[2].attempts}}</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>Duration :</th>
+                    <td>
+                      <p>{{event.levels[2].duration}}</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>Passing Score :</th>
+                    <td>
+                      <p>{{event.levels[2].score}}</p>
+                    </td>
+
+                  </tr>
+                  <tr>
+                    <th>Objective :</th>
+                    <td>
+                      <p>{{event.levels[2].objective}}</p>
+                    </td>
+
+                  </tr>
+                  <tr>
+                    <th>Ends On :</th>
+                    <td>
+                      <p>{{event.levels[2].ended}}</p>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 ">
+          <nav>
+            <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+              <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-challenge" role="tab"
+                aria-controls="nav-home" aria-selected="true">About Challenge</a>
+              <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-prize" role="tab"
+                aria-controls="nav-prize" aria-selected="false">Prizes</a>
+              <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-rules" role="tab"
+                aria-controls="nav-contact" aria-selected="false">Rules</a>
+              <a class="nav-item nav-link" id="nav-about-tab" data-toggle="tab" href="#nav-deliver" role="tab"
+                aria-controls="nav-about" aria-selected="false">Deliverables</a>
+              <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab"
+                aria-controls="nav-contact" aria-selected="false">FAQs</a>
+              <a class="nav-item nav-link" id="nav-about-tab" data-toggle="tab" href="#nav-tc" role="tab" aria-controls="nav-tc"
+                aria-selected="false">Terms & Conditions</a>
+            </div>
+
+
+
+          </nav>
+          <div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="nav-challenge" role="tabpanel" aria-labelledby="nav-home-tab">
+              <div id="aboutcha">
+                <h2>{{event.details.AboutChallenge.topic}}</h2>
+                <h3>{{event.details.AboutChallenge.topic_details}}</h3>
+                <p id="why">Why take the {{event.title}} challenge?</p>
+                <ul *ngFor="let abouttopiclist of event.details.AboutChallenge.whychallenge">
+                  <li>{{abouttopiclist}}</li>
+                </ul>
+                <button routerLink="/login" class="btn-hover color-1">Register Now </button>
+                <p class="text-center" *ngIf="event.url">
+                  <iframe width="815" height="380" [src]="event.url | safe" frameborder="0" allow="autoplay; encrypted-media"
+                    allowfullscreen=""></iframe>
+
+                </p>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="nav-prize" role="tabpanel" aria-labelledby="nav-profile-tab">
+
+
+
+              <div role="tabpanel" class="tab-pane" id="hackathon-prizes-content">
+                <div class="row">
+
+
+                  <ul class="hackathon-common-list prizes-list" style="list-style-type: none;display: inline;" class="prizewinners">
+
+                    <li class="col-sm-3">
+                      <i class="fa fa-trophy fa-5x" style="color: gold;" aria-hidden="true"><sup><code style="font-size: 30px;">1st</code></sup></i>
+                      <!--<h5>{{event.details.Prizes.1st}}</h5>-->
+                      {{event.details.Prizes.st}}
+                    </li>
+                    <li class="col-sm-3">
+                      <i class="fa fa-trophy fa-5x" style="color: silver;" aria-hidden="true"><sup><code style="font-size: 30px;">2nd</code></sup></i>
+                      <!--      <h5>{{event.details.Prizes.2nd}}</h5>-->
+                      {{event.details.Prizes.nd}}
+                    </li>
+                    <li class="col-sm-3" style="width: 100px;">
+                      <div class="row" style="margin-left: 20px;">
+                        <i class="fa fa-trophy fa-5x" style="color: green;" aria-hidden="true"></i>
+                        <!--   <h5>{{event.details.Prizes.3rd}}</h5>-->
+                        <span style="font-size: 18px;">{{event.details.Prizes.rd}}</span>
+                      </div>
+                    </li>
+
+                  </ul>
+
+
+                </div>
+              </div>
+
+
+
+
+
+
+
+            </div>
+            <div class="tab-pane fade" id="nav-deliver" role="tabpanel" aria-labelledby="nav-about-tab">
+              <div class="deliver" style="width: 1140px;">
+                <p>{{event.details.deliverables.topic}}</p>
+                <div *ngFor="let delivery of event.details.deliverables.deliver">
+                  <p>{{delivery.level}}</p>
+                  <ul *ngFor="let values of delivery.value">
+                    <li>{{values}}</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-pane fade" id="nav-rules" role="tabpanel" aria-labelledby="nav-contact-tab">
+              <div class="rules">
+                <p>{{event.details.Rules.title}}</p>
+                <ul *ngFor="let rule of event.details.Rules.contest ">
+                  <li>{{rule}}</li>
+                </ul>
+                <p>{{event.details.Rules.rules_highlight}}</p>
+                <div *ngFor="let rules of event.details.Rules.highlight">
+                  <p>{{rules.level}}</p>
+                  <ul *ngFor="let highlight of rules.value">
+                    <li>{{highlight}}</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+              <div class="rules">
+                <p>{{event.details.Rules.title}}</p>
+                <ul *ngFor="let rule of event.details.Rules.contest ">
+                  <li>{{rule}}</li>
+                </ul>
+                <p>{{event.details.Rules.rules_highlight}}</p>
+                <div *ngFor="let rules of event.details.Rules.highlight">
+                  <p>{{rules.level}}</p>
+                  <ul *ngFor="let highlight of rules.value">
+                    <li>{{highlight}}</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="nav-tc" role="tabpanel" aria-labelledby="nav-contact-tab">
+              <div class="tc" style="width: 1140px;">
+
+                <ul *ngFor="let tcs of event.details.TCs">
+                  <li>{{tcs.level}}</li>
+                  <ul *ngFor="let value of tcs.value">
+                    <li>{{value}}</li>
+                  </ul>
+
+                </ul>
+
+              </div>
+            </div>
+
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

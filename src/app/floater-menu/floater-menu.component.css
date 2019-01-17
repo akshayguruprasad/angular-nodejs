@@ -1,0 +1,91 @@
+.icon{
+    position:fixed;
+    top:100px;
+    right:2%;
+    transform:translate(-50%,-50%);
+    width:80px;
+    height:80px;
+    cursor:pointer;
+    z-index: 2;
+    }
+    .hamburger{
+    position:absolute;
+    top:50%;
+    right:12%;
+    transform:translate(-50%,-50%);
+    width:40px;
+    height:6px;
+    cursor:pointer;
+    background:#fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,.9);
+    transition:.5s;
+    }
+    .hamburger:before ,
+    .hamburger:after
+    {
+    content:'';
+    position:absolute;
+    width:40px;
+    height:6px;
+    cursor:pointer;
+    background:#fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,.9);
+    transition:.5s;
+    }
+    .hamburger:before {
+    top:-16px;
+    }
+    .hamburger:after{
+    top:16px;
+    }
+    .icon.active .hamburger{
+
+background: rgba(0,0,0,0);
+box-shadow: 0 2px 5px rgba(0,0,0,0);
+   
+    }
+    .icon.active .hamburger:before{
+transform: rotate(45deg);
+top:0;
+    }
+    
+    .icon.active .hamburger:after{
+        transform: rotate(135deg);
+top:0;
+}
+
+
+/*
+
+*/
+
+.menu-options{
+
+    position: absolute;
+   
+    
+    }
+        .menu-options.active{
+       
+    display: block;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -300px;
+    margin-left: -200px;
+    z-index: 1000;
+        }
+        .menu-options.active ul{
+    list-style-type: none;
+    font-size: xx-large;
+    text-decoration: none;
+        }
+    
+        .menu-options.active ul li a:link,a:visited{
+       text-decoration: none;
+        }
+    
+        .menu-options.active ul li a:hover{
+    color: #2b0a3d;
+    font-weight: bold;
+        }
