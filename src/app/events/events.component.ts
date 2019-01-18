@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class EventsComponent implements OnInit {
   eventList: any[] = [
     {
-      "heading": "<h1>CLOSE THE GAP BETWEEN YOUR DREAMS AND THE PERFECT JOB*<h1>",
+      "heading": "CLOSE THE GAP BETWEEN YOUR DREAMS AND THE PERFECT JOB*",
       "title": "ADOBE AEM",
       "prize": "15,00,000/-",
       "endson": "28th Oct",

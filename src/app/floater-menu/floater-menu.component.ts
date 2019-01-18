@@ -10,20 +10,23 @@ export class FloaterMenuComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    $(document).ready(function () {
-      $(".icon").click(() => {
-
-        $(".icon").toggleClass('active');
-        $(".menu").toggleClass('active');
-        $(".menu-options").toggleClass('active');
-        
+    let toggler = document.getElementsByClassName("caret");
+let i=0;
+    for (i = 0; i < toggler.length; i++) {
+      toggler[i].addEventListener("click", function() {
+        this.parentElement.querySelector(".nested").classList.toggle("active");
+        this.classList.toggle("caret-down");
       });
-      $("#back2Top").click(function (event) {
-        event.preventDefault();
-        $("html, body").animate({ scrollTop: 0 }, "slow");
-        return false;
-      });
-    });
+    }
   }
+
+  openNav() {
+    document.getElementById("myNav").style.width = "100%";
+  }
+  
+   closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+  }
+
 
 }

@@ -1,18 +1,68 @@
-<div>
-    <div class="icon">
-        <div class="hamburger">
-        </div>
-    </div>
-</div>
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" (click)="closeNav()">&times;</a>
+  <div class="overlay-content">
 
+    <ul id="myUL">
+        <li><a routerLink="/home">Home</a></li>
+        <li>
+        <a href="https://www.capgemini.com/">About Capgemini</a>
+      </li>
 
-<div class="menu-options">
-    <ul>
-        <li><a href="https://www.capgemini.com/in-en/" target="_parent">ABOUT CAPGEMINI</a></li>
-        <li><a href="#">CONTEST DETAILS</a></li>
-        <li><a href="/prizes">PRIZES</a></li>
-        <li><a [routerLink]="['/register']">REGISTER</a></li>
-        <li><a [routerLink]="['/tc']">TERMS AND CONDITIONS</a></li>
-        <li><a href="#">REFER NOW</a></li>
+      <li class="caret" style="font-size: 40px;">Events
+        <ul class="nested">
+          <li><a routerLink="/events/coding">Coding</a></li>
+          <li><a routerLink="/events/adobe">Adobe Aem</a></li>
+
+          <li><a routerLink="/events/hybris">Hybris</a></li>
+          <li><a routerLink="/events/salesforce">Salesforce</a></li>
+          <li><a routerLink="/events/azure">Azure</a></li>
+
+          <li><a routerLink="/events/datascience">Data science</a></li>
+          <li><a routerLink="/events/cloudnative">Cloud Native</a></li>
+          <li><a routerLink="/events/sailpoint">SailPoint</a></li>
+
+          <li><a routerLink="/events/pingidentity">PING Identity</a></li>
+          <li><a routerLink="/events/fullstack">Full Stack</a></li>
+
+          <li><a routerLink="/events/embeddedsystems">Embedded Systems</a></li>
+          <li><a routerLink="/events/tech">Tech Aptitude</a></li>
+        </ul>
+      </li>
+
+      <li><a routerLink="/prizes">Prizes</a></li>
+
+      <li> <a routerLink="/schedule">Schedule</a></li>
+      <li><a routerLink="/tc">Terms and conditions</a></li>
+      <li><a routerLink="/refer">Refer now</a></li>
+
     </ul>
+
+
+
+
+  </div>
 </div>
+
+<span style="font-size:30px;cursor:pointer" (click)="openNav()" id="myidon">&#9776;</span>
+
+
+
+<!--
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+-->

@@ -1,91 +1,115 @@
-.icon{
-    position:fixed;
-    top:100px;
-    right:2%;
-    transform:translate(-50%,-50%);
-    width:80px;
-    height:80px;
-    cursor:pointer;
-    z-index: 2;
-    }
-    .hamburger{
-    position:absolute;
-    top:50%;
-    right:12%;
-    transform:translate(-50%,-50%);
-    width:40px;
-    height:6px;
-    cursor:pointer;
-    background:#fff;
-    box-shadow: 0 2px 5px rgba(0,0,0,.9);
-    transition:.5s;
-    }
-    .hamburger:before ,
-    .hamburger:after
-    {
-    content:'';
-    position:absolute;
-    width:40px;
-    height:6px;
-    cursor:pointer;
-    background:#fff;
-    box-shadow: 0 2px 5px rgba(0,0,0,.9);
-    transition:.5s;
-    }
-    .hamburger:before {
-    top:-16px;
-    }
-    .hamburger:after{
-    top:16px;
-    }
-    .icon.active .hamburger{
-
-background: rgba(0,0,0,0);
-box-shadow: 0 2px 5px rgba(0,0,0,0);
-   
-    }
-    .icon.active .hamburger:before{
-transform: rotate(45deg);
-top:0;
-    }
-    
-    .icon.active .hamburger:after{
-        transform: rotate(135deg);
-top:0;
-}
-
-
-/*
-
-*/
-
-.menu-options{
-
-    position: absolute;
-   
-    
-    }
-        .menu-options.active{
-       
-    display: block;
+body {
+    font-family: 'Lato', sans-serif;
+  }
+  
+  .overlay {
+    height: 100%;
+    width: 0;
     position: fixed;
-    top: 50%;
-    left: 50%;
-    margin-top: -300px;
-    margin-left: -200px;
-    z-index: 1000;
-        }
-        .menu-options.active ul{
-    list-style-type: none;
-    font-size: xx-large;
+    z-index: 1;
+    top: 0;
+    left: 0;
+
+    background-image: linear-gradient(to left, #93a359,rgb(17, 134, 212), #6e4ee1, #000000);  box-shadow: 0 5px 15px rgba(242, 97, 103, .4);
+
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+  
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .overlay a {
+    padding: 8px;
     text-decoration: none;
-        }
-    
-        .menu-options.active ul li a:link,a:visited{
-       text-decoration: none;
-        }
-    
-        .menu-options.active ul li a:hover{
-    color: #2b0a3d;
-    font-weight: bold;
-        }
+    font-size: 36px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+  
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+    }
+  }
+
+  #myidon{
+position: fixed;
+top: 30px;
+right: 35px;;
+color: white;
+
+
+  }
+
+
+  /*
+  
+  new menus
+  
+  */
+
+
+
+  ul, #myUL {
+    list-style-type: none;
+  }
+  
+  #myUL {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .caret {
+    cursor: pointer;
+    -webkit-user-select: none; /* Safari 3.1+ */
+    -moz-user-select: none; /* Firefox 2+ */
+    -ms-user-select: none; /* IE 10+ */
+    user-select: none;
+  }
+  
+  .caret::before {
+    content: "\25B6";
+    color: black;
+    display: inline-block;
+    margin-right: 6px;
+  }
+  
+  .caret-down::before {
+    -ms-transform: rotate(90deg); /* IE 9 */
+    -webkit-transform: rotate(90deg); /* Safari */
+    transform: rotate(90deg);  
+  }
+  
+  .nested {
+    display: none;
+  }
+  
+  .active {
+    display: block;
+  }
+
+  .nested li a {
+
+    color: greenyellow;
+  }

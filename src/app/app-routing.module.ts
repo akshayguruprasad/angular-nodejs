@@ -17,7 +17,21 @@ const routes: Routes = [
   { path: 'register', component: RegisterComponent },
   { path: 'prizes', component: PrizeComponent },
   { path: 'refer', component: ReferComponent },
-  { path: 'events', component: EventsComponent },
+  { path: 'events/coding', component: EventsComponent },
+  { path: 'events/tech', component: EventsComponent },
+  { path: 'events/salesfoce', component: EventsComponent },
+  { path: 'events/adobe', component: EventsComponent },
+  { path: 'events/hybris', component: EventsComponent },
+  { path: 'events/azure', component: EventsComponent },
+  { path: 'events/datascience', component: EventsComponent },
+  { path: 'events/pingidentity', component: EventsComponent },
+  { path: 'events/embeddedsystems', component: EventsComponent },
+  { path: 'events/tech', component: EventsComponent },
+
+  { path: 'login', component: RegisterComponent },
+
+
+
 ];
 
 @NgModule({

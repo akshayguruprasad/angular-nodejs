@@ -1,8 +1,9 @@
 .home-master{
+
+    background: url('../../assets/images/pexels-photo-952670.jpeg') repeat-y center fixed;
     width: 100vmax;
     height: 100vmax;
-    background: url('../../assets/images/pexels-photo-952670.jpeg') repeat-y center fixed;
-    background-size: 100% 100%;
+    background-size: 100% ;
     background-position: top center;
 }
 img{
@@ -263,4 +264,12 @@ prizes
 
 .fa{
      color:#4183D7;
+}
+app-footer{
+    width: 100vmax;
+    height: 100vmax;
+    background-size: 100% ;
+    background-position: top center;
+
+
 }
