@@ -1,47 +1,115 @@
-.home-master{
 
-    background: url('../../assets/images/pexels-photo-952670.jpeg') repeat-y center fixed;
-    width: 100vmax;
-    height: 100vmax;
-    background-size: 100% ;
-    background-position: top center;
-}
-img{
-    background: none !important;
-position: absolute;
-align-items: center;
+.home-contents{
+
+margin-left: 10%;
+margin-right: 10%;
+background-color: aliceblue;
+color:black;
+font-size: 40px;
+color: black;
+
 }
 
-#branding{
-position: relative;
-}
-.company{
-position: absolute;
-margin-bottom: 120px;
-margin-top: 80px;
-top: 30%;
-left: 25%;
-}
-.hack{
-    position: absolute;
-    margin-top: 220px;
-    left: 34%;
-    top: 80%;
- 
-}
-#hack{
-width: 270px;
-height:100px;
-}
-#home-tab{
-position: absolute;
-top: 450px;
-left: 150px;
+.image-holder{
+    background: url('../../assets/images/pexels-photo-952670.jpeg') no-repeat ; 
+    height:100%; 
+  padding: 0; 
+  margin: 0; 
+  min-height: 100vmax;
+
+  background-position: bottom;
+  background-size: cover; 
 }
 
-/*
-registeration button
-*/
+
+.branding{
+    margin-bottom: 3%;
+
+}
+#branding-cg{
+margin-left: 36%;
+width: 30%;
+}
+#branding-tc{
+    margin-left: 40%;
+    width: 20%;
+}
+#branding-tech{
+    margin-left: 50%;
+    width: 10%;
+    height: 2vh;
+
+}
+.home{
+   
+    font-size: 2vh;
+}
+
+.about-concept{
+
+    background: url('../../assets/images/about.png') no-repeat;
+    background-position: right;
+    width: 100%;
+    background-size: cover;
+
+}
+
+
+
+#powered{
+left: 36%;
+font-size: 70%;
+}
+
+#sponser{
+
+width: 90%;
+height: 1vh;
+left: 36%;
+}
+
+#concept{
+font-weight: bolder;
+font-size: 60px;
+text-align: center;
+color: black;
+
+}
+.concept-info{
+
+
+}
+.concept-final{
+
+
+
+}
+#more-tech{
+    font-weight: bolder;
+    font-size: 60px;
+
+}
+
+.about-concept .concept-info,.concept-final{
+text-align: center;
+color: black;}
+.more-challenge{
+
+}
+
+
+
+.know-more-challenge{
+margin-left: 70%;
+
+}
+
+.know-more-challenge{
+text-decoration: none;
+color: white;
+font-size: 40px;
+}
+
 .register {
 	border: 2px solid #2e2e2e;
 	cursor: pointer;
@@ -56,17 +124,20 @@ registeration button
 		border 1s cubic-bezier(0.19, 1, 0.22, 1),
 		color 0.6s cubic-bezier(0.19, 1, 0.22, 1);
     user-select: none;
-    width: 300px;
-    top: 350px;
-    left: 380px;
+    width: 40%;
+margin-left: 33%;
     background-color: greenyellow;
+
 
 }
 
 .register a {
-	color: #969696;
+	color: black;
 	font-family: "Varela Round";
-	text-decoration: none;
+    text-decoration: none;
+    word-wrap: break-word;
+    font-size: 1.3vmin;
+
 }
 
 .register .mask {
@@ -74,14 +145,14 @@ registeration button
 	background-color: rgba(255, 255, 255, 0.5);
 	height: 100px;
 	position: absolute;
-	transform: translate3d(-120%, -50px, 0) rotate3d(0, 0, 1, 45deg);
-	transition: all 1.1s cubic-bezier(0.19, 1, 0.22, 1);
-	width: 200px;
+	transform: translate3d(-120%, -70px, 0) rotate3d(0, 0, 1, 55deg);
+	transition: all 4.1s cubic-bezier(0.19, 1, 0.22, 1);
+	width: 2004px;
 }
 
 .register .shift {
 	display: inline-block;
-	transition: all 1.1s cubic-bezier(0.19, 1, 0.22, 1);
+	transition: all 5.1s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 .register:hover {
@@ -92,16 +163,16 @@ registeration button
 }
 
 .register:hover a {
-	color: #fff;
+	color: greenyellow;
 }
 
 .register:hover .mask {
 	background-color: #fff;
-	transform: translate3d(120%, -100px, 0) rotate3d(0, 0, 1, 90deg);
+	transform: translate3d(120%, -180px, 0) rotate3d(0, 0, 1, -180deg);
 }
 
 .register:hover .shift {
-	transform: translateX(5px);
+	transform: translateX(15px);
 }
 
 .register:active {
@@ -112,41 +183,8 @@ registeration button
 	color: #202020;
 }
 
-body.show {
-	background-color: #282828;
-}
-
-/* .register:hover {
-	background-image: url('http://cuinine.com/img/codepen/savvy.jpg');
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-size: cover;
-} */
 
 
-
-
-/*
-*/
-
-/*
-about-concept
-*/
-#about-concept{
-    background:url('../../assets/images/grid.jpg') no-repeat;
-    background-position-y: -90px;
-    background-color: #fff;
-    font-size: 20px;
-    color: black;
-}
-#about-concept h4{
-font-weight: bolder;
-font-size: 26px;
-}
-
-/*
-various fields of intrests
-*/
 
 .btn-hover {
     width: 150px;
@@ -173,6 +211,7 @@ various fields of intrests
     -o-transition: all .4s ease-in-out;
     -webkit-transition: all .4s ease-in-out;
     transition: all .4s ease-in-out;
+    color: black;
 }
 
 .btn-hover:focus {
@@ -227,49 +266,120 @@ various fields of intrests
 }
 
 
-/*
-prizes
 
-*/
-
-.box{
-    padding:60px 0px;
+.about-capgemini-heading{
+font-size: 60px;
+font-weight: bolder;
+text-align: center;
 }
 
-.box-part{
-    background:#FFF;
-    border-radius:10px;
-    padding:60px 10px;
-    margin:30px 0px;
+@media only screen and (max-width: 479px) {
+   
+    .about-capgemini-heading{
+        left: -1000px;;
+        display: none;
+        }
+
+
+ }
+.about-capgemini-info{
+
+    font-size: 40px;
+
+    text-align: center;
 }
 
-.box-part:hover{
-    background:#4183D7;
+.contest-terms{}
+.contest-terms-heading{
+    font-size: 60px;
+    font-weight: bolder;
+    text-align: center;
+}
+.contest-terms-info{
+    font-size: 40px;
+    text-align: center;
 }
 
-.box-part:hover .fa , 
-.box-part:hover .title , 
-.box-part:hover .text ,
-.box-part:hover a{
-    color:#FFF;
-    -webkit-transition: all 1s ease-out;
-    -moz-transition: all 1s ease-out;
-    -o-transition: all 1s ease-out;
-    transition: all 1s ease-out;
+#register-holder{
+
+    position: relative;
+}
+#register-container{
+margin-bottom: 160px;
+}
+.challenge-head{
+
+    font-weight: bolder;
+font-size: 40px;
+text-align: center;
+color: black;
+}
+#breaker{
+    background-color: #000000;
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    margin-left: 40%;
+}
+#challenge-holder{
+    position: relative;
+}
+.challenge-head-body{
+
+    text-align: center;
 }
 
-.text{
-    margin:20px 0px;
+.intrests
+{
+
+    font-weight: bolder;
+font-size: 40px;
+text-align: center;
+color: black;
+}
+.intrests-heading{
+    font-size: 60px;
+    font-weight: bolder;
+    text-align: center;
+
+
 }
 
-.fa{
-     color:#4183D7;
+.intrests-text div div button{
+
+width: 80%;
+height: 400px;
+font-weight: bolder;
+font-size: 40px;
+text-align: center;
+color: white;
+
 }
+
+.benefit-me-heading{
+    font-weight: bolder;
+    font-size: 60px;
+    text-align: center;
+}
+p{
+    font-size: 40px;
+    text-align: center;
+}
+.benefit-me-text .row{ margin-left: 4%;}
+
+.benefit-me-text .row p{
+    margin-left: 10px;
+font-size: 40px;
+
+padding-top: 20px;
+}
+
+
 app-footer{
     width: 100vmax;
     height: 100vmax;
     background-size: 100% ;
     background-position: top center;
-
+;
 
 }

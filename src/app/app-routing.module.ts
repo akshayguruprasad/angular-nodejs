@@ -7,9 +7,11 @@ import { Routes, RouterModule } from '@angular/router';
 import { EventsComponent } from './events/events.component';
 import { RegisterComponent } from './register/register.component';
 import { ReferComponent } from './refer/refer.component';
+import { TempcComponent } from './tempc/tempc.component';
+import { FootComponent } from './foot/foot.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/home', pathMatch: 'full' },
+  { path: '', redirectTo: '/te', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
   { path: 'tc', component: TCComponent },
   { path: 'event', component: EventsComponent },
@@ -17,7 +19,23 @@ const routes: Routes = [
   { path: 'register', component: RegisterComponent },
   { path: 'prizes', component: PrizeComponent },
   { path: 'refer', component: ReferComponent },
-  { path: 'events', component: EventsComponent },
+  { path: 'events/coding', component: EventsComponent },
+  { path: 'events/tech', component: EventsComponent },
+  { path: 'events/salesfoce', component: EventsComponent },
+  { path: 'events/adobe', component: EventsComponent },
+  { path: 'events/hybris', component: EventsComponent },
+  { path: 'events/azure', component: EventsComponent },
+  { path: 'events/datascience', component: EventsComponent },
+  { path: 'events/pingidentity', component: EventsComponent },
+  { path: 'events/embeddedsystems', component: EventsComponent },
+  { path: 'events/tech', component: EventsComponent },
+  { path: 'te', component: TempcComponent },
+  
+
+  { path: 'login', component: RegisterComponent },
+
+
+
 ];
 
 @NgModule({

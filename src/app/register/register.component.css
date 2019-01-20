@@ -126,3 +126,18 @@
         margin: auto;
         right: 6%;
     }
+ 
+.container-fluid{
+
+    background: url('../../assets/images/red-sand.jpeg') 100% 0 no-repeat;
+    height: 100vmax;
+    width: 100vmax;
+    background-size: cover; 
+
+
+}
+#registerimage{
+position: absolute;
+margin-left:  100px;
+margin-top: 350px;
+}

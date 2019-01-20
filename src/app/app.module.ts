@@ -16,6 +16,9 @@ import { FooterComponent } from './footer/footer.component';
 import { FloaterMenuComponent } from './floater-menu/floater-menu.component';
 import { FloaterScrollerComponent } from './floater-scroller/floater-scroller.component';
 import { ScheduleComponent } from './schedule/schedule.component';
+import { TempcComponent } from './tempc/tempc.component';
+import { FootComponent } from './foot/foot.component';
+import { EntryComponent } from './entry/entry.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +35,10 @@ import { ScheduleComponent } from './schedule/schedule.component';
     FloaterMenuComponent,
     FloaterScrollerComponent,
     ScheduleComponent,
-    SafePipe
+    SafePipe,
+    TempcComponent,
+    FootComponent,
+    EntryComponent
   ],
   imports: [
     BrowserModule,
